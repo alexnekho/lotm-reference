@@ -1,0 +1,10 @@
+.path-overview{margin:22px 0 20px;padding:20px 23px;border:1px solid #a58a566f;border-left:3px solid #c5a56a;border-radius:2px 18px 2px 2px;background:linear-gradient(120deg,#5a48251c,#10191f2b);box-shadow:inset 0 0 0 4px #101a203b}
+.path-overview .eyebrow{display:block;color:#d7ba80;font-size:11px;letter-spacing:1.5px;margin-bottom:9px}
+.path-overview p{margin:0;color:#e4dccb;font:17px/1.7 Georgia,Cambria,serif}
+.org-card.reference-card-plain,.illuminated-home .org-card.reference-card-plain{min-height:230px;padding:28px 24px 23px;border-radius:3px 22px 3px 15px;background:linear-gradient(135deg,#233138,#142027 70%);box-shadow:inset 0 0 0 4px #101a20,inset 0 0 0 5px #a88b5345,0 8px 22px #0003}
+.org-card.reference-card-plain::before,.illuminated-home .org-card.reference-card-plain::before{content:none}
+.org-card.reference-card-plain::after,.illuminated-home .org-card.reference-card-plain::after{content:'✧';top:15px;left:auto;right:17px;width:31px;height:31px;border:0;background:transparent;box-shadow:none;font-size:21px;color:#d8b77b}
+.org-card.reference-card-plain h3{margin-top:17px}
+.org-card[href^="#org/"]::before{background-position:center 48%;background-size:cover}
+.org-article .org-banner{object-fit:cover;object-position:center 48%;background:#111b22}
+@media(max-width:650px){.path-overview{padding:16px 17px}.path-overview p{font-size:16px}.org-card.reference-card-plain{min-height:210px;padding:23px 20px}}
