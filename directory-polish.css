@@ -1,0 +1,50 @@
+/* Readable library navigation and illustrated archive cards. */
+.rail{width:282px;padding:28px 22px;background:linear-gradient(110deg,#101d25,#0c141b);border-right:1px solid #8d774e}
+.shell{margin-left:282px}
+.rail .seal{width:76px;height:76px;margin:0 auto 16px}
+.rail .brand{font-size:27px;color:#fff0cf}
+.rail .brand:after{margin-top:17px;padding-bottom:17px}
+.rail .rail-label{font:600 11px/1.5 Arial,sans-serif;letter-spacing:1.7px;color:#d4ba85;margin-top:24px}
+.rail nav{margin-top:12px}
+.rail nav a{font:16px/1.45 Georgia,Cambria,serif;color:#e6dfcf;padding:12px 13px;margin:5px 0;gap:10px;min-height:49px;border:1px solid transparent;border-radius:4px 20px 20px 4px;text-shadow:0 1px 3px #000}
+.rail nav a span{flex:1;min-width:0}
+.rail nav a:hover,.rail nav a:focus-visible{background:#25343a;border-color:#8c7752;color:#fff4d9}
+.rail nav a.active{background:linear-gradient(100deg,#4a402c,#262c29);border-color:#b69a63;color:#fff1cb;box-shadow:inset 3px 0 #e3bd76,0 3px 12px #0003}
+.rail nav b{font:600 12px/1.4 Arial,sans-serif;color:#ebce92;background:#090f1470;border:1px solid #9b8250;border-radius:20px;padding:2px 7px}
+.rail-bottom{font-size:13px;color:#ccc5b4}.rail-bottom .edition{font-size:11px;color:#e2c68e}
+.org-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:26px 22px;align-items:stretch}
+.org-card,.org-card:hover,.illuminated-home .org-card{--card-art:url('assets/darkness.jpg');position:relative;isolation:isolate;min-width:0;min-height:365px;padding:151px 24px 24px;border:1px solid #937c50;border-radius:45% 45% 10px 10px / 13% 13% 10px 10px;background:linear-gradient(145deg,#23333b,#14222b 65%,#17242a);box-shadow:inset 0 0 0 5px #101b22,inset 0 0 0 6px #bba06c30,0 12px 28px #0004;overflow:hidden;text-align:left;transition:border-color .18s,box-shadow .18s,transform .18s}
+.org-card:before,.illuminated-home .org-card:before{content:'';position:absolute;inset:10px 10px auto;height:119px;border-radius:48% 48% 3px 3px / 42% 42% 3px 3px;background:linear-gradient(0deg,#14222b 0%,#14222b11 70%),var(--card-art) center 35%/cover no-repeat;border-top:1px solid #d2b77e99;opacity:1;pointer-events:none}
+.org-card:after,.illuminated-home .org-card:after{content:'✦';position:absolute;top:105px;left:calc(50% - 21px);right:auto;width:42px;height:42px;display:grid;place-items:center;border:1px solid #c9a86a;border-radius:50%;background:#17252c;color:#efd49c;font:23px/1 Georgia,serif;opacity:1;box-shadow:0 0 0 4px #14222b,0 0 20px #d2ac4322;pointer-events:none}
+.org-card .eyebrow{font:600 11px/1.5 Arial,sans-serif;letter-spacing:1.2px;color:#e1c38c;margin-top:7px}
+.org-card h3{font-family:'Cormorant Archive',Cambria,Georgia,serif;font-size:32px;font-weight:700;line-height:1.12;color:#fff0d2;margin:10px 0 16px;overflow-wrap:break-word;text-wrap:balance}
+.org-card p{font:15px/1.65 Georgia,Cambria,serif;color:#ddd9ce;margin-bottom:22px}
+.org-card .card-link{font:600 13px/1.5 Arial,sans-serif;color:#f2d398;border-top:1px solid #b69b6255;margin-top:auto;padding-top:15px;letter-spacing:.2px}
+.org-card:hover,.org-card:focus-visible{border-color:#ecd096;box-shadow:inset 0 0 0 5px #16232a,inset 0 0 0 6px #dfbd7866,0 16px 32px #0006;transform:translateY(-3px)}
+.org-card:hover h3{color:#fff8e7}
+.org-card[href*='/start'],.org-card[href*='/character'],.org-card[href*='/attributes'],.org-card[href*='/skills'],.org-card[href*='/occupations']{--card-art:url('assets/section-start.png')}
+.org-card[href*='/rules'],.org-card[href*='/checks'],.org-card[href*='/combat'],.org-card[href*='/damage'],.org-card[href*='/defence'],.org-card[href*='/actions'],.org-card[href*='/movement'],.org-card[href*='/conditions'],.org-card[href*='/sanity']{--card-art:url('assets/section-rules.png')}
+.org-card[href*='/advancement'],.org-card[href*='/digestion'],.org-card[href*='/potion'],.org-card[href*='/mysticism'],.org-card[href*='/ritual'],.org-card[href*='/spirit'],.org-card[href*='/charm']{--card-art:url('assets/section-advancement.png')}
+.org-card[href*='/world'],.org-card[href*='/history'],.org-card[href*='/daily-life'],.org-card[href*='/territories']{--card-art:url('assets/opening_city.jpg')}
+.org-card[href*='/items'],.org-card[href*='/weapons'],.org-card[href*='/prices'],.org-card[href*='/beyonder-items']{--card-art:url('assets/perfection.jpg')}
+.org-card[href*='/creatures'],.org-card[href*='/bestiary']{--card-art:url('assets/moon.jpg')}
+.org-card[href$='/organizations-3839']{--card-art:url('assets/tyrant.jpg')}
+.org-card[href$='/organizations-3852']{--card-art:url('assets/perfection.jpg')}
+.org-card[href$='/organizations-3863']{--card-art:url('assets/earth.jpg')}
+.org-card[href$='/organizations-3874']{--card-art:url('assets/reader.jpg')}
+.org-card[href$='/organizations-3886']{--card-art:url('assets/sun.jpg')}
+.org-card[href$='/organizations-3897']{--card-art:url('assets/war.jpg')}
+.org-card[href$='/organizations-3909'],.org-card[href$='/organizations-3951'],.org-card[href$='/organizations-4014']{--card-art:url('assets/fool.jpg')}
+.org-card[href$='/organizations-3939'],.org-card[href$='/organizations-4010']{--card-art:url('assets/mystery.jpg')}
+.org-card[href$='/organizations-3947']{--card-art:url('assets/demoness.jpg')}
+.org-card[href$='/organizations-3956']{--card-art:url('assets/abyss.jpg')}
+.org-card[href$='/organizations-3976']{--card-art:url('assets/death.jpg')}
+.org-card[href$='/organizations-3984']{--card-art:url('assets/mutant.jpg')}
+.org-card[href$='/organizations-3992'],.org-card[href$='/organizations-3998']{--card-art:url('assets/hanged.jpg')}
+.org-card[href$='/organizations-4003'],.org-card[href$='/organizations-3928']{--card-art:url('assets/visionary.jpg')}
+.filters button,.toolbar button{font-size:14px;color:#e5dcc8;border-color:#927b50}.filters button.active{background:#d1b47a;color:#111a20;border-color:#e1c994}
+.crumb{font-size:14px;line-height:1.6;color:#c9c1ae}.crumb a{color:#e0c68f}
+.article-contents a{font-size:16px;color:#ead7b1}.search-button{font-size:14px;color:#ded6c5}
+@media(max-width:1200px) and (min-width:651px){.rail{width:250px;padding:24px 16px}.shell{margin-left:250px}.rail nav a{font-size:15px;padding:11px 10px}.org-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.rail{width:100%;padding:20px 17px}.shell{margin-left:0}.rail .brand{font-size:23px}.rail .seal{width:45px;height:45px;margin:0}.rail nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.rail nav a{font-size:14px;line-height:1.45;min-height:54px;margin:0;padding:10px 9px;border:1px solid #79674355;border-radius:5px;background:#15232b;gap:6px}.rail nav b{display:none}.org-grid{grid-template-columns:1fr;gap:23px}.org-card,.org-card:hover,.illuminated-home .org-card{min-height:340px;padding:151px 24px 24px}.org-card h3{font-size:32px}.org-card p{font-size:16px}.search-button{font-size:13px}.article-contents a{font-size:15px}}
+@media(prefers-reduced-motion:reduce){.org-card,.org-card:hover{transition:none;transform:none}}
