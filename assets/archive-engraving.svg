@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none" stroke="#ba9b64" stroke-width="1">
+<defs><pattern id="h" width="7" height="7" patternUnits="userSpaceOnUse"><path d="M0 7 7 0" stroke-opacity=".3"/></pattern></defs>
+<g opacity=".65"><circle cx="900" cy="260" r="210"/><circle cx="900" cy="260" r="196"/><circle cx="900" cy="260" r="160"/><ellipse cx="900" cy="260" rx="95" ry="210"/><ellipse cx="900" cy="260" rx="210" ry="72"/><path d="M650 260h500M900 10v500M750 110l300 300M750 410l300-300M900 50l182 315H718z"/><circle cx="900" cy="260" r="9"/></g>
+<g fill="url(#h)"><path d="M0 800V660h60v-95l35-30 35 30v95h30V530h35V420l18-45 18 45v110h35V650h48V500l36-55 36 55v150h48V590h25V440l30-50 30 50v150h25V800z"/><path d="M760 800V610h40V460l25-80 25 80v150h40V560h50V420l25-45 25 45v140h45V510h32V300l26-95 26 95v210h33V620h48V800z"/></g>
+<path d="M8 700h1184M30 720h1140M100 742h1000M175 765h850M80 610h30m65-40h75m58-10h42m72 100h100M805 500h40m84 90h60m60-50h70"/>
+<g opacity=".4"><path d="M0 100q230 70 430-5T850 95M20 130q180 65 420-3M0 350q180-70 360 0M600 680q280-60 600-20"/><circle cx="160" cy="150" r="44"/><path d="M160 90v120m-60-60h120m-104-44 88 88m-88 0 88-88"/></g></svg>
