@@ -1,0 +1,33 @@
+/* Quiet engraved frames for readable reference text. */
+:is(.sequence-content .ability,.rule-article>details,.organization-dossier>details,.org-article>details,.equipment-entry){
+  position:relative;border:1px solid #9d8156a6;border-radius:3px 20px 3px 16px;
+  box-shadow:inset 0 0 0 4px #101a20,inset 0 0 0 5px #a88b5350,0 8px 22px #0003;
+}
+:is(.sequence-content .ability,.rule-article>details,.organization-dossier>details,.org-article>details,.equipment-entry)::before{
+  content:"";position:absolute;inset:8px;pointer-events:none;z-index:0;
+  border:1px solid #9f83503b;border-radius:1px 13px 1px 10px;
+  background:
+    linear-gradient(135deg,#d6b978 0 2px,transparent 2px 100%) top left/26px 26px no-repeat,
+    linear-gradient(225deg,#d6b978 0 2px,transparent 2px 100%) top right/26px 26px no-repeat,
+    linear-gradient(45deg,#d6b978 0 2px,transparent 2px 100%) bottom left/26px 26px no-repeat,
+    linear-gradient(315deg,#d6b978 0 2px,transparent 2px 100%) bottom right/26px 26px no-repeat;
+}
+:is(.sequence-content .ability,.rule-article>details,.organization-dossier>details,.org-article>details,.equipment-entry)>:not(summary){position:relative;z-index:1}
+:is(.sequence-content .ability,.rule-article>details,.organization-dossier>details,.org-article>details)>summary{position:relative;z-index:1}
+:is(.sequence-content .ability,.rule-article>details,.organization-dossier>details,.org-article>details)[open]::after,.equipment-entry::after{
+  content:"";position:absolute;right:13px;bottom:8px;width:94px;height:94px;
+  background:url('assets/ornament-spirits.svg') center/contain no-repeat;
+  opacity:.17;pointer-events:none;z-index:0;
+}
+:is(.article-rituals>details,.article-honorific-names>details,.organization-dossier>details,.sequence-content .block-ritual)[open]::after{background-image:url('assets/ornament-hand.svg');opacity:.2}
+.equipment-entry::after{width:75px;height:75px;opacity:.14}
+.sequence-content .block-recipe{border-color:#a6b58b91}
+.sequence-content .block-ritual{border-color:#b495ba91}
+.sequence-content .block-description{border-color:#81929a80}
+:is(.sequence-content .ability,.rule-article>details,.organization-dossier>details,.org-article>details,.equipment-entry):hover{border-color:#d1b377c2}
+@media(max-width:650px){
+  :is(.sequence-content .ability,.rule-article>details,.organization-dossier>details,.org-article>details,.equipment-entry)::before{inset:5px}
+  :is(.sequence-content .ability,.rule-article>details,.organization-dossier>details,.org-article>details)[open]::after{width:67px;height:67px;opacity:.12}
+  .equipment-entry::after{width:55px;height:55px;opacity:.1}
+}
+@media(prefers-contrast:more){:is(.sequence-content .ability,.rule-article>details,.organization-dossier>details,.org-article>details,.equipment-entry)::after{display:none}}
